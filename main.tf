@@ -1,6 +1,6 @@
 module "my-s3rep" {
     source = "./module"
-    source_bucket_name = "test-bucket-replication-sss-sdb"
-    destination_bucket_name = "test-dest-bucket-replication-sss-sdb"
+    source_bucket_name = "Your_source_bucket_name"
+    destination_bucket_name = "Your_destination_bucket_name"
 }
 
