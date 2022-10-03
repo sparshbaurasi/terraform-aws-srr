@@ -7,6 +7,7 @@ resource "aws_s3_bucket_versioning" "destination_versioning" {
   versioning_configuration {
     status = "Enabled"
   }
+  depends_on = [aws_s3_bucket.destination_bucket]
 }
 
 resource "aws_s3_bucket_versioning" "source_versioning" {
